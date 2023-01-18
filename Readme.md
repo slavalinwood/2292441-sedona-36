@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
-* Студент: [Владислав](https://up.htmlacademy.ru/htmlcss/36/user/2292441).
-* Наставник: `Надежда Палаш`(https://htmlacademy.ru/profile/id1191579).
+* Студент: [Владислав Елисин](https://up.htmlacademy.ru/htmlcss/36/user/2292441).
+* Наставник: [Надежда Палаш](https://htmlacademy.ru/profile/id1191579).
 
 ---
 
