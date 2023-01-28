@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li>
+            <a href="">
+              <img src="" alt="Логотип Седоны">
+            </a>
+          </li>
+          <li>
+            <a href="">
+              Главная
+            </a>
+          </li>
+          <li>
+            <a href="">
+              О Седоне
+            </a>
+          </li>
+          <li>
+            <a href="">
+              Гостиницы
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <ul>
+        <li>
+          <a href=""></a>
+        </li>
+        <li>
+          <a href=""></a>
+        </li>
+        <li>
+          <button class="button" type="submit">
+            Хочу сюда!
+          </button>
+        </li>
+      </ul>
+
+      <div></div>
+    </header>
+
+    <main>
+      <section>
+        <h1>
+          Гостиницы Седоны
+        </h1>
+        <nav>
+          <a href="">
+            <span class="visually-hidden">
+              Главная
+            </span>
+          </a>
+          <a href="">
+            Гостиницы
+          </a>
+        </nav>
+        <form action="">
+          <fieldset>
+            <legend>
+              Инфраструктура:
+            </legend>
+            <ul>
+              <li>
+                <label>
+                  Бассейн
+                  <input type="checkbox"  name="swimming-pool" checked>
+                </label>
+                </li>
+              <li>
+                <label>
+                  Парковка
+                  <input type="checkbox"  name="parking-lot" checked>
+                </label>
+                </li>
+              <li>
+                <label>
+                  Wi-Fi
+                  <input type="checkbox" name="Wi-Fi">
+                </label>
+              </li>
+            </ul>
+
+          </fieldset>
+          <fieldset>
+            <legend>
+              Тип Жилья:
+            </legend>
+            <ul>
+              <li>
+                <label>
+                  Гостиница
+                  <input type="radio" name="housing-type" value="hotel" checked>
+                </label>
+              </li>
+              <li>
+                <label>
+                  Мотель
+                  <input type="radio" name="housing-type" value="motel">
+                </label>
+                </li>
+              <li>
+                <label>
+                  Апартаменты
+                  <input type="radio" name="housing-type" value="apartments">
+                </label>
+                </li>
+            </ul>
+          </fieldset>
+
+          <fieldset>
+            <legend>
+              Стоимость, ₽:
+            </legend>
+            <label>
+              от
+              <input type="number" name="min-price" value="0">
+            </label>
+            <label>
+              до
+              <input type="number" name="max-price" value="9000">
+            </label>
+          </fieldset>
+
+            <button class="button" type="submit">
+              Применить
+            </button>
+
+            <button type="reset">
+              Сбросить
+            </button>
+        </form>
+      </section>
+
+        <section>
+          <h2>
+            Найдено гостиниц: 38
+          </h2>
+          <select class="select-control" name="price-realted-options">
+            <option value="the-cheapest-options">Самые дешевые</option>
+          </select>
+          <form action="">
+            <input type="radio" name="cards" value="">
+            <input type="radio" name="big-card" value="">
+            <input type="radio" name="list" value="">
+          </form>
+
+          <ul>
+            <li>
+              <article>
+                <a href="">
+                  <img src="" alt="Amara Resort & Spa">
+                </a>
+                <h3>
+                  Amara Resort & Spa
+                </h3>
+                <span>
+                  Гостиница
+                </span>
+                <span>
+                  От 4000 ₽
+                </span>
+                <a href="">
+                  Подробнее
+                </a>
+                <button class="button" type="submit">
+                  В избранное
+                </button>
+                <span>
+                  Рейтинг: 8,5
+                </span>
+              </article>
+              </li>
+            <li>
+              <article>
+                <a href="">
+                  <img src="" alt="Villas at Poco Diablo">
+                </a>
+                <h3>
+                  Villas at Poco Diablo
+                </h3>
+                <span>
+                  Гостиница
+                </span>
+                <span>
+                  От 5000 ₽
+                </span>
+                <a href="">
+                  Подробнее
+                </a>
+                <button class="button" type="submit">
+                  В избранное
+                </button>
+                <span>
+                  Рейтинг: 9,2
+                </span>
+              </article>
+            </li>
+            <li>
+              <article>
+                <a href="">
+                  <img src="" alt="Desert Quail Inn">
+                </a>
+                <h3>
+                  Desert Quail Inn
+                </h3>
+                <span>
+                  Гостиница
+                </span>
+                <span>
+                  От 2500 ₽
+                </span>
+                <a href="">
+                  Подробнее
+                </a>
+                <button class="button" type="submit">
+                  В избранное
+                </button>
+                <span>
+                  Рейтинг: 6,9
+                </span>
+              </article>
+            </li>
+            <li>
+              <article>
+                <a href="">
+                  <img src="" alt="GreenTree Inn">
+                </a>
+                <h3>
+                  GreenTree Inn
+                </h3>
+                <span>
+                  Гостиница
+                </span>
+                <span>
+                  От 1500 ₽
+                </span>
+                <a href="">
+                  Подробнее
+                </a>
+                <button class="button" type="submit">
+                  В избранное
+                </button>
+                <span>
+                  Рейтинг: 5,0
+                </span>
+              </article>
+            </li>
+          </ul>
+
+          <ul class="pagination">
+            <li>
+              <a href="">
+                <span class="visually hidden">
+                  Предыдущая страница
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <span>
+                  1
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <span>
+                  2
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <span>
+                  3
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <span>
+                  4
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <span>
+                  5
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <span>
+                  6
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <span>
+                  7
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <span>
+                  8
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <span>
+                  9
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <span>
+                  10
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <span class="visually hidden">
+                  Следующая страница
+                </span>
+              </a>
+            </li>
+          </ul>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </main>
+
+    <footer>
+      <div>
+        <h2>
+          Подпишитесь на рассылку
+        </h2>
+        <p>
+          Только полезная информация и никакого спама, честное бойскаутское!
+        </p>
+
+        <form action="">
+          <label for="subscription-form-email" class="visually-hidden">E-mail:</label>
+          <input type="email" name="subscription-form-email" value="Ваш e-mail">
+          <button class="button" type="submit">
+            Подписаться
+          </button>
+        </form>
+        </div>
+
+        <div>
+          <ul>
+            <li>
+              <a href="">
+                <span class="visually-hidden">
+                  Вконтакте
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <span class="visually-hidden">
+                  Телеграм
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <span class="visually-hidden">
+                  Ютуб
+                </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <a href="tel:+78128121212">
+          +7 (812) 812-12-12
+        </a>
+
+        <a href="">
+          <svg></svg>
+        </a>
+    </footer>
+
+  </body>
+</html>
