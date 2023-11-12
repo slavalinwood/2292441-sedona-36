@@ -31,15 +31,15 @@
           </li>
         </ul>
         <ul class="main-navigation-list main-navigation-user">
-          <li class="main-navigation-item search">
-            <a class="main-navigation-link" href="#">
+          <li class="main-navigation-item">
+            <a class="main-navigation-link search" href="#">
               <span class="visually-hidden">
                 Поиск
               </span>
             </a>
           </li>
-          <li class="main-navigation-item favourites">
-            <a class="main-navigation-link" href="#">
+          <li class="main-navigation-item">
+            <a class="main-navigation-link favourites" href="#">
               <span class="visually-hidden">
                 Избарнное
               </span>
@@ -65,8 +65,8 @@
               Фильтры каталога гостиниц
             </h2>
             <ul class="breadcrumbs">
-              <li class="breadcrumbs-item breadcrumbs-house-icon">
-                <a class="breadcrumbs-link" href="index.html">
+              <li class="breadcrumbs-item">
+                <a class="breadcrumbs-link breadcrumbs-house-icon" href="index.html">
                   <span class="visually-hidden">
                     Главная
                   </span>
@@ -136,11 +136,11 @@
                 <legend class="catalog-filter-title">
                   Стоимость, ₽:
                 </legend>
-                <label class="control">
+                <label class="control price-control">
                   от
                   <input class="control-input" class="price-filter" type="number" name="min-price" value="0">
                 </label>
-                <label class="control">
+                <label class="control price-control">
                   до
                   <input class="control-input" class="price-filter" type="number" name="max-price" value="9000">
                 </label>
@@ -202,10 +202,10 @@
               <a class="product-link button" href="#">
                 Подробнее
               </a>
-              <button class="product-button-favourites" type="submit">
+              <button class="product-button-favourites button" type="submit">
                 В избранное
               </button>
-              <span class="product-rating">
+              <span class="product-rating button">
                 Рейтинг: 8,5
               </span>
               <div></div>
@@ -228,10 +228,10 @@
               <a class="product-link button" href="#">
                 Подробнее
               </a>
-              <button class="product-button-favourites" type="submit">
+              <button class="product-button-favourites button" type="submit">
                 В избранное
               </button>
-              <span class="product-rating">
+              <span class="product-rating button">
                 Рейтинг: 9,2
               </span>
             </article>
@@ -253,10 +253,10 @@
               <a class="product-link button" href="#">
                 Подробнее
               </a>
-              <button class="product-button-favourites" type="submit">
+              <button class="product-button-favourites button" type="submit">
                 В избранное
               </button>
-              <span class="product-rating">
+              <span class="product-rating button">
                 Рейтинг: 6,9
               </span>
             </article>
@@ -278,10 +278,10 @@
               <a class="product-link button" href="#">
                 Подробнее
               </a>
-              <button class="product-button-favourites" type="submit">
+              <button class="product-button-favourites button" type="submit">
                 В избранное
               </button>
-              <span class="product-rating">
+              <span class="product-rating button">
                 Рейтинг: 5,0
               </span>
             </article>
@@ -297,7 +297,7 @@
               </a>
             </li>
             <li class="pagination-item">
-              <a class="pagination-link" href="">
+              <a class="pagination-link pagination-current-page" href="">
                 1
               </a>
             </li>
@@ -358,14 +358,14 @@
       </section>
     </main>
     <footer class="page-footer">
-      <section class="newsletter">
+      <section class="newsletter inner-newsletter">
         <h2 class="visually-hidden">
           Рассылка
         </h2>
             <span class="newsletter-title">
               Подпишитесь на рассылку
             </span>
-            <p class="newsletter-description">
+            <p class="newsletter-description inner-newsletter-description">
               Только полезная информация и никакого спама, честное бойскаутское!
             </p>
             <form class="newsletter-form" action="">
