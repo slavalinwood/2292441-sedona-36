@@ -88,6 +88,13 @@ ul {
     height: min-content;
 }
 
+.main-navigation-item:first-child {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
 .main-navigation-user {
     display: flex;
     margin-left: auto;
@@ -180,8 +187,28 @@ ul {
     grid-column-start: 3;
 }
 
+.city-image {
+    background-image: url(../images/advantages-city.jpg);
+    width: 800px;
+    height: 391px;
+    background-size: cover;
+}
+
 .bridge-image {
-    grid-column-start: 1;
+    background-image: url(../images/advantages-bridge.jpg);
+    width: 800px;
+    height: 391px;
+    background-size: cover;
+}
+
+.advantages-city-image {
+    grid-row-start: 1;
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+.advantages-bridge-iamge {
+    grid-row-start: 3;
 }
 
 .advantages-item:nth-child(3), .advantages-item:nth-child(5) {
@@ -238,6 +265,30 @@ ul {
     grid-template-columns: 400px 400px 400px;
     grid-template-rows: 1fr;
     margin-top: 0;
+}
+
+.house-image {
+    background-image: url(../images/house.svg);
+    width: 75px;
+    height: 72px;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+}
+
+.burger-image {
+    background-image: url(../images/burger.svg);
+    width: 75px;
+    height: 72px;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+}
+
+.gift-image {
+    background-image: url(../images/gift.svg);
+    width: 75px;
+    height: 76px;
+    margin: 0 auto;
+    background-repeat: no-repeat;
 }
 
 .services-header {
@@ -386,7 +437,7 @@ ul {
 }
 
 .main-navigation-link-current {
-    text-decoration: underline;
+    border-bottom: 2px solid #756257;
 }
 
 .inner-header {
