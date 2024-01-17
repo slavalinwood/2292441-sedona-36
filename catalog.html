@@ -9,7 +9,7 @@
     <header class="page-header">
       <div class="header-container">
         <nav class="main-navigation">
-          <a class="main-navigation-link main-navigation-logo" href="index.html">
+          <a class="main-navigation-link main-navigation-logo" href="">
             <img class="logo" src="images/logo-full.svg" width="140" height="70" alt="Логотип Седоны">
           </a>
           <ul class="main-navigation-list">
@@ -30,28 +30,29 @@
             </li>
           </ul>
           <ul class="main-navigation-list main-navigation-user">
-            <li class="main-navigation-item search">
+            <li class="main-navigation-user-item">
+              <div class="search"></div>
               <a class="main-navigation-link" href="#">
                 <span class="visually-hidden">
                   Поиск
                 </span>
               </a>
             </li>
-            <li class="main-navigation-item favourites">
+            <li class="main-navigation-user-item">
+              <div class="favourites"></div>
               <a class="main-navigation-link" href="#">
                 <span class="visually-hidden">
                   Избарнное
                 </span>
               </a>
             </li>
-            <li class="main-navigation-item">
+            <li class="main-navigation-user-item">
               <button class="main-navigation-button" type="submit">
                 Хочу сюда!
               </button>
             </li>
           </ul>
         </nav>
-        <div></div>
       </div>
     </header>
     <main class="main-inner">
@@ -169,25 +170,33 @@
                 Сначала дешевые
               </option>
             </select>
-            <a class="button button-cards-showcase" href="#">
-              <span class="visually-hidden">
-                Показать карточки
-              </span>
-            </a>
-            <a class="button button-fullscreen-showcase" href="#">
-              <span class="visually-hidden">
-                Полный экран
-              </span>
-            </a>
-            <a class="button button-list-showcase" href="#">
-              <span class="visually-hidden">
-                Показать список
-              </span>
-            </a>
+            <ul class="showcase-options">
+              <li class="button-cards-showcase">
+                <a class="button" href="#">
+                  <span class="visually-hidden">
+                    Показать карточки
+                  </span>
+                </a>
+              </li>
+              <li class="button-fullscreen-showcase">
+                <a class="button" href="#">
+                  <span class="visually-hidden">
+                    Полный экран
+                  </span>
+                </a>
+              </li>
+              <li class="button-list-showcase">
+                <a class="button" href="#">
+                  <span class="visually-hidden">
+                    Показать список
+                  </span>
+                </a>
+              </li>
+            </ul>
           </header>
           <ul class="product-list">
             <li class="product-card">
-              <article>
+              <article class="product-card-content">
                 <h3 class="product-title">
                   Amara Resort & Spa
                 </h3>
@@ -209,11 +218,16 @@
                 <span class="product-rating button">
                   Рейтинг: 8,5
                 </span>
-                <div></div>
+                <div class="stars-container">
+                  <div class="star"></div>
+                  <div class="star"></div>
+                  <div class="star"></div>
+                  <div class="star"></div>
+                </div>
               </article>
             </li>
             <li class="product-card">
-              <article>
+              <article class="product-card-content">
                 <h3 class="product-title">
                   Villas at Poco Diablo
                 </h3>
@@ -235,10 +249,16 @@
                 <span class="product-rating button">
                   Рейтинг: 9,2
                 </span>
+                <div class="stars-container">
+                  <div class="star"></div>
+                  <div class="star"></div>
+                  <div class="star"></div>
+                  <div class="star"></div>
+                </div>
               </article>
             </li>
             <li class="product-card">
-              <article>
+              <article class="product-card-content">
                 <h3 class="product-title">
                   Desert Quail Inn
                 </h3>
@@ -260,10 +280,15 @@
                 <span class="product-rating button">
                   Рейтинг: 6,9
                 </span>
+                <div class="stars-container">
+                  <div class="star"></div>
+                  <div class="star"></div>
+                  <div class="star"></div>
+                </div>
               </article>
             </li>
             <li class="product-card">
-              <article>
+              <article class="product-card-content">
                 <h3 class="product-title">
                   GreenTree Inn
                 </h3>
@@ -285,6 +310,10 @@
                 <span class="product-rating button">
                   Рейтинг: 5,0
                 </span>
+                <div class="stars-container">
+                  <div class="star"></div>
+                  <div class="star"></div>
+                </div>
               </article>
             </li>
           </ul>
