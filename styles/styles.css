@@ -54,6 +54,7 @@ ul {
     width: 1200px;
     margin: 0 auto;
     padding: 0;
+    position: relative;
 }
 
 .main-catalog-container {
@@ -145,6 +146,7 @@ ul {
     position: relative;
     top: -10px;
     z-index: -1;
+    margin-bottom: -10px;
 }
 
 .welcome-svg {
@@ -177,6 +179,23 @@ ul {
     height: 17px;
     background-image: url(../images/favoutites.svg);
     background-repeat: no-repeat;
+    position: relative;
+}
+
+.favourites::after {
+    content: "12";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: -10px;
+    left: 9px;
+    text-align: center;
+    vertical-align: middle;
+    color: #ffffff;
+    font-size: 10px;
+    font-weight: 400;
+    background-color: #7DB54F;
+    border-radius: 10px;
 }
 
 .advantages {
@@ -266,6 +285,7 @@ ul {
     text-transform: uppercase;
 }
 
+
 .advantages-item-title::after {
     content: "";
     margin-left: auto;
@@ -276,6 +296,7 @@ ul {
     width: 60px;
     height: 2px;
     background-color: rgba(0, 0, 0, 0.3);
+
 }
 
 .advantages-item-accent {
@@ -417,6 +438,7 @@ ul {
     background-size: 100% auto;
     color: #ffffff;
     padding: 96px 258px 104px;
+    background-color: #000000;
 }
 
 .newsletter-title {
@@ -431,6 +453,7 @@ ul {
     color: #ffffff;
     font-size: 22px;
     line-height: 26px;
+    font-weight: 400;
 }
 
 .newsletter-form {
@@ -455,6 +478,10 @@ ul {
     border-bottom-right-radius: 4px;
 }
 
+.footer-social {
+    display: flex;
+}
+
 .footer-social-list {
     display: flex;
 }
@@ -475,6 +502,10 @@ ul {
     width: 22px;
     height: 17px;
     background-image: url(../images/youtube.svg);
+}
+
+.footer-contacts {
+    display: flex;
 }
 
 .footer-contacts-link {
