@@ -429,7 +429,7 @@ ul {
     font-weight: 700;
     line-height: 36px;
     text-transform: uppercase;
-    padding: 8px 50px;
+    padding: 13px 50px;
     border-radius: 4px;
 }
 
@@ -458,6 +458,7 @@ ul {
     font-size: 22px;
     line-height: 26px;
     font-weight: 400;
+    margin-bottom: 53px;
 }
 
 .newsletter-form {
@@ -471,8 +472,8 @@ ul {
     border: none;
     border-top-left-radius: 4px;
     border-bottom-left-radius: 4px;
-    padding-top: 8px;
-    padding-bottom: 8px;
+    padding-top: 14px;
+    padding-bottom: 14px;
 }
 
 .newsletter-form-button {
@@ -545,6 +546,10 @@ ul {
     background-image: url(../images/catalog-background.jpg);
     padding: 35px 70px 70px 70px;
     box-sizing: border-box;
+    position: relative;
+    top: -10px;
+    z-index: -1;
+    margin-bottom: -10px;
 }
 
 .inner-header-title {
@@ -640,6 +645,7 @@ ul {
 
 .catalog-results-header {
     display: flex;
+    justify-content: space-between;
 }
 
 .catalog-results-title {
@@ -652,29 +658,33 @@ ul {
 
 .select-control {
     line-height: 21px;
+    width: 292px;
+    border: 2px solid #F2F2F2;
+    border-radius: 4px;
 }
 
-.button-cards-showcase {
+.showcase-modes {
+    display: flex;
+    width: 160px;
+    justify-content: space-between;
+}
+
+.showcase-mode {
     width: 16px;
     height: 14px;
+}
+
+.cards-mode {
     background-image: url(../images/button-cards.svg);
     background-repeat: no-repeat;
 }
 
-.showcase-options {
-    display: flex;
-}
-
-.button-fullscreen-showcase {
-    width: 16px;
-    height: 14px;
+.fullscreen-mode {
     background-image: url(../images/button-fullscreen.svg);
     background-repeat: no-repeat;
 }
 
-.button-list-showcase {
-    width: 16px;
-    height: 14px;
+.list-mode {
     background-image: url(../images/button-list.svg);
     background-repeat: no-repeat;
 }
@@ -742,12 +752,23 @@ ul {
     background-image: url(../images/star.svg);
 }
 
+.inner-newsletter {
+    background-image: none;
+    color: #000000;
+    background-color: #ffffff;
+}
+
+
 .inner-newsletter-title {
     color: #000000;
 }
 
 .inner-newsletter-description {
     color: #333333;
+}
+
+.inner-newsletter-form-input {
+    background-color: #F2F2F2;
 }
 
 .inner-pagination {
@@ -767,9 +788,4 @@ ul {
 .pagination-current-page {
     color: #000000;
     background-color: #F2F2F2;
-}
-
-.inner-newsletter {
-    background-image: none;
-    color: #000000;
 }

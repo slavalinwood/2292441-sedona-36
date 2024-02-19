@@ -1,1 +1,1 @@
-let searchHotelButton = document.querySelector('.hotel-search-button');
+let hotelSearchButton = document.querySelector('.hotel-search-button');

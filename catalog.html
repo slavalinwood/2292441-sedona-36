@@ -170,22 +170,22 @@
                 Сначала дешевые
               </option>
             </select>
-            <ul class="showcase-options">
-              <li class="button-cards-showcase">
+            <ul class="showcase-modes">
+              <li class="showcase-mode cards-mode">
                 <a class="button" href="#">
                   <span class="visually-hidden">
                     Показать карточки
                   </span>
                 </a>
               </li>
-              <li class="button-fullscreen-showcase">
+              <li class="showcase-mode fullscreen-mode">
                 <a class="button" href="#">
                   <span class="visually-hidden">
                     Полный экран
                   </span>
                 </a>
               </li>
-              <li class="button-list-showcase">
+              <li class="showcase-mode list-mode">
                 <a class="button" href="#">
                   <span class="visually-hidden">
                     Показать список
@@ -389,68 +389,72 @@
       </div>
     </main>
     <footer class="page-footer">
-      <section class="newsletter inner-newsletter">
-        <h2 class="visually-hidden">
-          Рассылка
-        </h2>
-            <span class="newsletter-title inner-newsletter-title">
-              Подпишитесь на рассылку
-            </span>
-            <p class="newsletter-description inner-newsletter-description">
-              Только полезная информация и никакого спама, честное бойскаутское!
-            </p>
-            <form class="newsletter-form" action="">
-              <label for="subscription-form-email" class="visually-hidden">E-mail:</label>
-              <input class="newsletter-form-input" type="email" name="subscription-form-email" value="Ваш e-mail">
-              <button class="newsletter-form-button" type="submit">
-                Подписаться
-              </button>
-            </form>
-      </section>
-      <section class="footer-social">
-        <h4 class="visually-hidden">
-          Наши социальные сети
-        </h4>
-        <ul class="footer-social-list">
-          <li class="footer-social-item">
-            <a class="footer-social-link vk-logo" href="https://vk.com/htmlacademy">
-              <span class="visually-hidden">
-                Вконтакте
+      <div class="footer-container">
+        <section class="newsletter inner-newsletter">
+          <h2 class="visually-hidden">
+            Рассылка
+          </h2>
+              <span class="newsletter-title inner-newsletter-title">
+                Подпишитесь на рассылку
               </span>
+              <p class="newsletter-description inner-newsletter-description">
+                Только полезная информация и никакого спама, честное бойскаутское!
+              </p>
+              <form class="newsletter-form" action="">
+                <label for="subscription-form-email" class="visually-hidden">E-mail:</label>
+                <input class="newsletter-form-input inner-newsletter-form-input" type="email" name="subscription-form-email" value="Ваш e-mail">
+                <button class="newsletter-form-button" type="submit">
+                  Подписаться
+                </button>
+              </form>
+        </section>
+        <div class="footer-contacts-container">
+          <section class="footer-social">
+            <h4 class="visually-hidden">
+              Наши социальные сети
+            </h4>
+            <ul class="footer-social-list">
+              <li class="footer-social-item vk-logo">
+                <a class="footer-social-link" href="https://vk.com/htmlacademy">
+                  <span class="visually-hidden">
+                    Вконтакте
+                  </span>
+                </a>
+              </li>
+              <li class="footer-social-item telegram-logo">
+                <a class="footer-social-link" href="https://t.me/htmlacademy">
+                  <span class="visually-hidden">
+                    Телеграм
+                  </span>
+                </a>
+              </li>
+              <li class="footer-social-item youtube-logo">
+                <a class="footer-social-link" href="https://www.youtube.com/user/htmlacademyru">
+                  <span class="visually-hidden">
+                    Ютуб
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </section>
+          <section class="footer-contacts">
+            <h4 class="visually-hidden">
+              Наш номер телефона
+            </h4>
+            <a class="footer-contacts-link" href="tel:+78128121212">
+              +7 (812) 812-12-12
             </a>
-          </li>
-          <li class="footer-social-item">
-            <a class="footer-social-link telegram-logo" href="https://t.me/htmlacademy">
-              <span class="visually-hidden">
-                Телеграм
-              </span>
+          </section>
+          <section class="developer">
+            <h4 class="visually-hidden">
+              Разработчик
+            </h4>
+            <a class="developer-link developer-logo" href="https://htmlacademy.ru/">
+              <img src="images/html-academy.svg" width="114.9" height="32.9" alt="Логотип HTML Academy">
             </a>
-          </li>
-          <li class="footer-social-item">
-            <a class="footer-social-link youtube-logo" href="https://www.youtube.com/user/htmlacademyru">
-              <span class="visually-hidden">
-                Ютуб
-              </span>
-            </a>
-          </li>
-        </ul>
-      </section>
-      <section class="footer-contacts">
-        <h4 class="visually-hidden">
-          Наш номер телефона
-        </h4>
-        <a class="footer-contacts-link" href="tel:+78128121212">
-          +7 (812) 812-12-12
-        </a>
-      </section>
-      <section class="developer">
-        <h4 class="visually-hidden">
-          Разработчик
-        </h4>
-        <a class="developer-link developer-logo" href="https://htmlacademy.ru/">
-          <img src="images/html-academy.svg" width="114.9" height="32.9" alt="Логотип HTML Academy">
-        </a>
-      </section>
+          </section>
+        </div>
+      </div>
     </footer>
   </body>
 </html>
