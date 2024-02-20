@@ -134,18 +134,21 @@
                       </li>
                   </ul>
                 </fieldset>
-                <fieldset class="catalog-filter-group">
+                <fieldset class="catalog-filter-group-price">
                   <legend class="catalog-filter-title">
                     Стоимость, ₽:
                   </legend>
-                  <label class="control price-control">
-                    от
-                    <input class="control-input price-filter" type="number" name="min-price" value="0">
-                  </label>
-                  <label class="control price-control">
-                    до
-                    <input class="control-input" class="price-filter" type="number" name="max-price" value="9000">
-                  </label>
+                  <div class="price-filter-group">
+                    <label class="price-control-from" for="price-filter-from">
+                      от
+                    </label>
+                    <input class="control-input price-filter" type="number" name="min-price" id="price-filter-from" value="0">
+                    <label class="price-control-to" for="price-filter-to">
+                      до
+                    </label>
+                    <input class="control-input price-filter" type="number" name="max-price" id="price-filter-to" value="9000">
+                  </div>
+                  <input class="price-filter-range" type="range" min="0" max="9000">
                 </fieldset>
                   <div class="catalog-filter-button-group">
                     <button class="button catalog-filter-button" type="submit">
