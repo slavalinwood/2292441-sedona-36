@@ -597,13 +597,10 @@ ul {
     background-repeat: no-repeat;
 }
 
-.catalog-filters {
+.catalog-filters-form {
     width: 1060px;
     display: flex;
-}
-
-.catalog-filters-form {
-    display: flex;
+    justify-content: space-between;
 }
 
 .catalog-filter-title {
@@ -614,6 +611,7 @@ ul {
 
 .catalog-filter-list {
     line-height: 23px;
+    padding: 0;
 }
 
 .price-control {
@@ -627,6 +625,12 @@ ul {
     line-height: 24px;
 }
 
+.catalog-filter-button-group {
+    margin: auto;
+    margin-right: 0;
+    width: 191px;
+}
+
 .catalog-filter-button {
     background-color: #82B3D3;
     color: #ffffff;
@@ -634,6 +638,8 @@ ul {
     font-weight: 700;
     line-height: 20px;
     text-transform: uppercase;
+    width: 191px;
+    padding: 8px 12px;
 }
 
 .transparent-filter-button {
