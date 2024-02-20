@@ -561,6 +561,16 @@ ul {
     margin-bottom: 8px;
 }
 
+.breadcrumbs {
+    display: flex;
+    width: 114px;
+    padding-left: 0;
+    justify-content: space-between;
+    margin: 0;
+    align-items: baseline;
+    margin-bottom: 40px;
+}
+
 .breadcrumbs-house-svg {
     background-image: url(../images/home-page.svg);
     width: 13px;
@@ -573,15 +583,6 @@ ul {
     width: 8px;
     height: 11px;
     background-repeat: no-repeat;
-}
-
-.breadcrumbs {
-    display: flex;
-    width: 114px;
-    padding-left: 0;
-    justify-content: space-between;
-    margin: 0;
-    align-items: baseline;
 }
 
 .breadcrumbs-link {
@@ -700,6 +701,7 @@ ul {
     grid-template-rows: auto auto;
     gap: 20px;
     padding: 0;
+    margin: 20px;
 }
 
 .product-card {
@@ -738,6 +740,10 @@ ul {
     color: #ffffff;
     background-color: #756157;
     text-decoration: none;
+}
+
+.product-button {
+    padding: 7px 0;
 }
 
 .product-button-favourites {
@@ -789,6 +795,11 @@ ul {
 
 .inner-pagination {
     display: flex;
+    justify-content: space-between;
+    list-style: none;
+    width: 400px;
+    padding: 0;
+    margin: 0;
 }
 
 .pagination-link {
@@ -799,15 +810,18 @@ ul {
     text-decoration: none;
     color: #ffffff;
     background-color: #82B3D3;
+    padding: 17px 24px;
+    border-radius: 4px;
+}
+
+.pagination-dots {
+    background-color: transparent;
+    color: #000000;
 }
 
 .pagination-current-page {
     color: #000000;
     background-color: #F2F2F2;
-}
-
-.popup {
-    position: relative;
 }
 
 .popup-content {
@@ -837,9 +851,6 @@ ul {
     line-height: 24px;
     font-weight: 700;
     white-space: nowrap;
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 48px;
 }
 
 .popup-input {
