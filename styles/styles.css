@@ -46,13 +46,16 @@ ul {
     border: none;
 }
 
+.page-header {
+    z-index: 1;
+}
+
 .header-container {
     box-sizing: border-box;
     padding: 0 70px;
     margin: 0 auto;
     width: 1200px;
 }
-
 
 .main-index-container {
     width: 1200px;
@@ -149,7 +152,6 @@ ul {
     flex-wrap: wrap;
     position: relative;
     top: -10px;
-    z-index: -1;
     margin-bottom: -10px;
 }
 
@@ -503,6 +505,12 @@ ul {
 
 }
 
+.footer-social-link {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+}
+
 .vk-logo {
     width: 24px;
     height: 14px;
@@ -549,7 +557,6 @@ ul {
     box-sizing: border-box;
     position: relative;
     top: -10px;
-    z-index: -1;
     margin-bottom: -10px;
 }
 
@@ -601,10 +608,16 @@ ul {
     width: 1060px;
     display: flex;
     justify-content: space-between;
+    align-items: baseline;
 }
 
 .catalog-filter-group-price {
     padding: 0;
+}
+
+.catalog-filter-group {
+    padding: 0;
+    margin: 0;
 }
 
 .catalog-filter-title {
@@ -620,15 +633,22 @@ ul {
     margin: 0;
 }
 
-.price-filter-group {
-    white-space: nowrap;
-    position: relative;
+.catalog-filter-item {
+    margin-bottom: 16px;
 }
 
-.price-control {
-    line-height: 24px;
-    color: #000000;
-    text-align: right;
+.catalog-filter-item:last-child {
+    margin-bottom: 0;
+}
+
+.price-filter-group {
+    display: grid;
+    grid-template-columns: 143px 143px;
+    grid-template-rows: auto;
+    margin-bottom: 10px;
+    gap: 2px;
+    position: relative;
+    width: 288px;
 }
 
 .price-control-from, .price-control-to {
@@ -639,31 +659,39 @@ ul {
 }
 
 .price-control-from {
-    left: 113px;
+    top: 10px;
+    left: 108px;
 }
 
 .price-control-to {
-    left: 263px;
+    top: 10px;
+    left: 253px;
 }
 
 .price-filter-range {
     width: 287px;
 }
 
-.price-filter {
+.input-price-filter {
     width: 143px;
+    padding: 9px 0 15px 15px;
     border: none;
-    border-radius: 4px;
-}
-
-.control-input[value] {
+    box-sizing: border-box;
     font-weight: 700;
     line-height: 24px;
 }
 
+.input-price-filter-from {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+.input-price-filter-to {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
 .catalog-filter-button-group {
-    margin: auto;
-    margin-right: 0;
     width: 191px;
 }
 
@@ -693,6 +721,8 @@ ul {
 .catalog-results-header {
     display: flex;
     justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 40px;
 }
 
 .catalog-results-title {
@@ -705,7 +735,9 @@ ul {
 
 .select-control {
     line-height: 21px;
+    font-size: 16px;
     width: 292px;
+    padding: 14px 15px;
     border: 2px solid #F2F2F2;
     border-radius: 4px;
 }
@@ -719,11 +751,11 @@ ul {
 
 .showcase-mode {
     box-sizing: border-box;
-    width: 16px;
-    height: 14px;
-    padding: 17px 16px;
     border: 2px solid #F2F2F2;
     border-radius: 4px;
+    padding: 15px 14px;
+    width: 48px;
+    height: 48px;
 }
 
 .cards-mode {
@@ -741,7 +773,14 @@ ul {
     background-repeat: no-repeat;
 }
 
+.showcase-modes-link {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+}
+
 .product-list {
+    width: 1060px;
     display: grid;
     grid-template-columns: 340px 340px 340px;
     grid-template-rows: auto auto;
@@ -760,13 +799,16 @@ ul {
     font-size: 24px;
     font-weight: 700;
     line-height: 28px;
+    margin-bottom: 16px;
+    margin-top: 16px;
 }
 
 .product-info-container {
     display: grid;
     grid-template-columns: 140px 140px;
     grid-template-rows: auto auto auto;
-    gap: 20px;
+    column-gap: 20px;
+    row-gap: 16px;
 }
 
 .product-description {
@@ -812,6 +854,7 @@ ul {
 
 .stars-container {
     display: flex;
+    align-items: center;
 }
 
 .star {
@@ -877,6 +920,7 @@ ul {
     padding: 64px 70px;
     width: 717px;
     border-radius: 30px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
 }
 
 .popup-title {
@@ -884,7 +928,9 @@ ul {
     line-height: 36px;
     font-weight: 700;
     margin-bottom: 64px;
+    padding: 0;
     text-transform: uppercase;
+    text-align: left;
 }
 
 .popup-inputs {
@@ -900,6 +946,14 @@ ul {
     position: absolute;
     top: -100px;
     left: 542px;
+    padding: 0;
+}
+
+.x-button {
+    width: 15px;
+    height: 15px;
+    background-image: url(../images/x-button.svg);
+    margin: auto;
 }
 
 .popup-input-group {
@@ -934,7 +988,12 @@ ul {
     background-color: #F2F2F2;
     border: none;
     border-radius: 4px;
-    padding: 12px 0;
+    padding: 11px 0;
+    padding-left: 20px;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+    box-sizing: border-box;
 }
 
 .input-number {

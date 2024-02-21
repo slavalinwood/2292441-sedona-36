@@ -142,13 +142,13 @@
                     <label class="price-control-from" for="price-filter-from">
                       от
                     </label>
-                    <input class="control-input price-filter" type="number" name="min-price" id="price-filter-from" value="0">
+                    <input class="control-input input-price-filter input-price-filter-from" type="number" name="min-price" id="price-filter-from" value="0">
                     <label class="price-control-to" for="price-filter-to">
                       до
                     </label>
-                    <input class="control-input price-filter" type="number" name="max-price" id="price-filter-to" value="9000"><br>
-                    <input class="price-filter-range" type="range" min="0" max="9000">
+                    <input class="control-input input-price-filter input-price-filter-to" type="number" name="max-price" id="price-filter-to" value="9000"><br>
                   </div>
+                  <input class="price-filter-range" type="range" min="0" max="9000">
                 </fieldset>
                   <div class="catalog-filter-button-group">
                     <button class="button catalog-filter-button" type="submit">
@@ -176,22 +176,22 @@
               </option>
             </select>
             <ul class="showcase-modes">
-              <li class="showcase-mode cards-mode">
-                <a>
+              <li class="showcase-mode">
+                <a class="showcase-modes-link cards-mode">
                   <span class="visually-hidden">
                     Показать карточки
                   </span>
                 </a>
               </li>
-              <li class="showcase-mode fullscreen-mode">
-                <a>
+              <li class="showcase-mode">
+                <a class="showcase-modes-link fullscreen-mode">
                   <span class="visually-hidden">
                     Полный экран
                   </span>
                 </a>
               </li>
-              <li class="showcase-mode list-mode">
-                <a>
+              <li class="showcase-mode">
+                <a class="showcase-modes-link list-mode">
                   <span class="visually-hidden">
                     Показать список
                   </span>
