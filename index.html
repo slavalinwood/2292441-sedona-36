@@ -181,6 +181,10 @@
                   <legend class="popup-title">
                     Поиск гостиницы в Седоне
                   </legend>
+                  <button class="popup-close-button button" type="button">
+                    <div class="x-button"></div>
+                  </button>
+                  <div class="popup-input-group">
                     <label class="popup-input-name">
                       Дата заезда:
                       <input class="popup-input input-date" type="date" required>
@@ -189,15 +193,18 @@
                       Дата выезда:
                       <input class="popup-input input-date" type="date" required>
                     </label>
-                    <label class="popup-input-name">
-                      Взрослые:
-                      <input class="popup-input" type="number" required>
-                    </label>
-                    <label class="popup-input-name">
-                      Дети:
-                      <input class="popup-input" type="number" required>
-                    </label>
+                    <div class="popup-input-group-number">
+                      <label class="popup-input-name popup-input-number">
+                        Взрослые:
+                        <input class="popup-input input-number" type="number" required>
+                      </label>
+                      <label class="popup-input-name">
+                        Дети:
+                        <input class="popup-input input-number" type="number" required>
+                      </label>
+                    </div>
                     <button class="button popup-submit-button" type="submit">Найти</button>
+                  </div>
                 </fieldset>
               </form>
             </div>
