@@ -111,6 +111,7 @@ ul {
     display: flex;
     margin-left: auto;
     justify-content: flex-end;
+    align-items: baseline;
     width: 268px;
 }
 
@@ -119,16 +120,41 @@ ul {
     text-decoration: none;
 }
 
-.main-navigation-user-item {
+.main-navigation-user-link {
+    width: 100%;
+    height: 100%;
     padding: 22px 12px;
-    margin: 0;
+    display: inline-block;
+    box-sizing: border-box;
 }
 
-.main-navigation-user-item:last-child {
-    padding: 0;
-    margin-left: 20px;
+.main-navigation-user-item {
+    margin: 0;
+    width: 44px;
+    height: 64px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.favourites-counter-icon {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #7DB54F;
+    border-radius: 10px;
+    top: 10px;
+    left: 20px;
+}
+
+.favourites-counter {
+    font-size: 10px;
+    color: #ffffff;
+}
+
+.main-naviagtion-button-item {
     margin-top: auto;
     margin-bottom: auto;
+    margin-left: 20px;
 }
 
 .main-navigation-button {
@@ -173,35 +199,23 @@ ul {
 }
 
 .search {
-    width: 18px;
-    height: 18px;
+    width: 20px;
+    height: 20px;
+    margin: auto;
     background-image: url(../images/search.svg);
     background-repeat: no-repeat;
     box-sizing: border-box;
+    display: inline-block;
 }
 
 .favourites {
-    width: 18px;
-    height: 17px;
+    width: 20px;
+    height: 20px;
+    margin: auto;
     background-image: url(../images/favoutites.svg);
     background-repeat: no-repeat;
     position: relative;
-}
-
-.favourites::after {
-    content: "12";
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    top: -10px;
-    left: 9px;
-    text-align: center;
-    vertical-align: middle;
-    color: #ffffff;
-    font-size: 10px;
-    font-weight: 400;
-    background-color: #7DB54F;
-    border-radius: 10px;
+    display: inline-block;
 }
 
 .advantages {
@@ -477,6 +491,8 @@ ul {
     border-bottom-left-radius: 4px;
     padding-top: 14px;
     padding-bottom: 14px;
+    font-size: 18px;
+    padding-left: 15px;
 }
 
 .newsletter-form-button {
@@ -807,6 +823,10 @@ ul {
     border-radius: 4px;
 }
 
+.product-card-content {
+    width: 300px;
+}
+
 .product-title {
     font-size: 24px;
     font-weight: 700;
@@ -843,7 +863,7 @@ ul {
 }
 
 .product-button {
-    padding: 7px 0;
+    padding: 8px 0;
 }
 
 .product-button-favourites {
@@ -855,6 +875,7 @@ ul {
     color: #ffffff;
     background-color: #82B3D3;
     white-space: nowrap;
+    text-decoration: none;
 }
 
 .product-rating {
@@ -928,6 +949,8 @@ ul {
 
 .popup-content {
     position: absolute;
+    left: 1250px;
+    top: 0;
     background-color: #ffffff;
     box-sizing: border-box;
     padding: 64px 70px;
