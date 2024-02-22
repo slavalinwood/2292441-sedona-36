@@ -187,7 +187,7 @@
                   <div class="popup-input-group">
                     <label class="popup-input-name">
                       Дата заезда:
-                      <input class="popup-input input-date" type="date" required>
+                      <input class="popup-input input-date" type="date" autofocus required>
                     </label>
                     <label class="popup-input-name">
                       Дата выезда:
@@ -196,11 +196,14 @@
                     <div class="popup-input-group-number">
                       <label class="popup-input-name popup-input-number">
                         Взрослые:
-                        <input class="popup-input input-number" type="number" required>
+                        <input class="popup-input input-number" type="number" min="1" required>
                       </label>
                       <label class="popup-input-name">
                         Дети:
-                        <input class="popup-input input-number" type="number" required>
+                        <div class="popup-info-button">
+                          <div class="popup-info-icon"></div>
+                        </div>
+                        <input class="popup-input input-number" type="number" min="0" required>
                       </label>
                     </div>
                     <button class="button popup-submit-button" type="submit">Найти</button>
