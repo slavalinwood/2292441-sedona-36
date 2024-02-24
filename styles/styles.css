@@ -24,8 +24,7 @@ body {
     display: grid;
     grid-template-rows: min-content 1fr min-content;
     align-content: start;
-    min-width: 1200px;
-    padding: 0 40px;
+    min-width: 100%;
     margin: 0;
 }
 
@@ -140,15 +139,21 @@ ul {
     position: absolute;
     width: 20px;
     height: 20px;
+    text-align: center;
     background-color: #7DB54F;
     border-radius: 10px;
     top: 10px;
     left: 20px;
+    box-sizing: border-box
 }
 
 .favourites-counter {
-    font-size: 10px;
+    position: relative;
     color: #ffffff;
+    font-size: 10px;
+    line-height: 10px;
+    font-weight: 400;
+    top: -5.5px;
 }
 
 .main-naviagtion-button-item {
@@ -493,6 +498,7 @@ ul {
     padding-bottom: 14px;
     font-size: 18px;
     padding-left: 15px;
+    color: rgba(0, 0, 0, 0.6);
 }
 
 .newsletter-form-button {
@@ -594,6 +600,11 @@ ul {
     margin-bottom: 40px;
 }
 
+.breadcrumbs-item:first-child {
+    width: 13px;
+    height: 13px;
+}
+
 .breadcrumbs-house-svg {
     background-image: url(../images/home-page.svg);
     width: 13px;
@@ -613,6 +624,9 @@ ul {
     text-decoration: none;
     font-size: 16px;
     line-height: 21px;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
 }
 
 .breadcrumbs-house-icon {
@@ -655,6 +669,31 @@ ul {
 
 .catalog-filter-item:last-child {
     margin-bottom: 0;
+}
+
+.control-checkbox::before {
+    content:"";
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+    background-color: #ffffff;
+    position: absolute;
+}
+
+.control-radio::before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    position: absolute;
+}
+
+.control-input {
+    appearance: none;
+    position: absolute;
 }
 
 .price-filter-group {
@@ -751,14 +790,31 @@ ul {
     color: #000000;
 }
 
+.catalog-select {
+    margin: auto 70px auto auto;
+    position: relative;
+}
+
+.catalog-select::after {
+    content: "";
+    position: absolute;
+    top: 20px;
+    right: 17px;
+    width: 12px;
+    height: 9px;
+    background-image: url(../images/select-arrow.svg);
+    z-index: -1;
+}
+
 .select-control {
     line-height: 21px;
     font-size: 16px;
     width: 292px;
-    padding: 14px 15px;
+    padding: 12px 15px;
     border: 2px solid #F2F2F2;
     border-radius: 4px;
-    margin: auto 70px auto auto;
+    appearance: none;
+    background: none;
 }
 
 .showcase-modes {
@@ -814,7 +870,7 @@ ul {
     gap: 20px;
     padding: 0;
     margin: 0;
-    margin-bottom: 92px;
+    margin-bottom: 80px;
 }
 
 .product-card {
@@ -923,6 +979,30 @@ ul {
     width: 400px;
     padding: 0;
     margin: 0;
+    position: relative;
+}
+
+.inner-pagination::before {
+    content: "";
+    width: 1060px;
+    height: 1px;
+    background-color: #E6E6E6;
+    position: absolute;
+    top: -40px;
+}
+
+.pagination-item {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    width: 60px;
+    height: 100%;
+    background-color: #82B3D3;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+.pagination-cut {
+    background-color: transparent;
 }
 
 .pagination-link {
@@ -931,26 +1011,43 @@ ul {
     font-weight: 700;
     text-transform: uppercase;
     text-decoration: none;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
     color: #ffffff;
-    background-color: #82B3D3;
-    padding: 17px 24px;
-    border-radius: 4px;
+    text-align: center;
 }
 
-.pagination-dots {
-    background-color: transparent;
+.pagination-link-dots {
     color: #000000;
 }
 
 .pagination-current-page {
-    color: #000000;
     background-color: #F2F2F2;
 }
 
-.popup-content {
-    position: absolute;
-    left: 1250px;
+.pagination-link-current-page {
+    color: #000000;
+}
+
+.popup {
+    display: none;
+}
+
+.popup-background {
+    position: fixed;
+    width: 100%;
+    height: 100%;
     top: 0;
+    left: 0;
+    background-color: rgba(242, 242, 242, 0.8);;
+    z-index: 2;
+}
+
+.popup-content {
+    position: fixed;
+    top: 14%;
+    left: 30.5%;
     background-color: #ffffff;
     box-sizing: border-box;
     padding: 64px 70px;
@@ -1029,9 +1126,11 @@ ul {
 .popup-info-icon {
     width: 2px;
     height: 12px;
-    margin: auto;
+    margin-left: auto;
     display: inline-block;
     background-image: url(../images/i-icon.svg);
+    position: relative;
+    left: 12px;
 }
 
 .popup-input-number {

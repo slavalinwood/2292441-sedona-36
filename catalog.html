@@ -9,7 +9,7 @@
     <header class="page-header">
       <div class="header-container">
         <nav class="main-navigation">
-          <a class="main-navigation-link main-navigation-logo" href="">
+          <a class="main-navigation-link main-navigation-logo" href="index.html">
             <img class="logo" src="images/logo-full.svg" width="140" height="70" alt="Логотип Седоны">
           </a>
           <ul class="main-navigation-list">
@@ -45,6 +45,9 @@
                   Избарнное
                 </span>
               </a>
+              <div class="favourites-counter-icon">
+                <span class="favourites-counter">12</span>
+              </div>
             </li>
             <li class="main-naviagtion-button-item">
               <button class="main-navigation-button button" type="button">
@@ -63,8 +66,8 @@
               Гостиницы Седоны
             </h1>
             <ul class="breadcrumbs">
-              <li class="breadcrumbs-item breadcrumbs-house-svg">
-                <a class="breadcrumbs-link" href="index.html">
+              <li class="breadcrumbs-item">
+                <a class="breadcrumbs-link breadcrumbs-house-svg" href="index.html">
                   <span class="visually-hidden">
                     Главная
                   </span>
@@ -90,22 +93,28 @@
                   </legend>
                   <ul class="catalog-filter-list">
                     <li class="catalog-filter-item">
-                      <label class="control">
-                        Бассейн
-                        <input class="control-input" type="checkbox"  name="swimming-pool" checked>
-                      </label>
-                      </li>
+                      <div class="input-checkbox">
+                        <label class="control control-checkbox">
+                          Бассейн
+                          <input class="control-input" type="checkbox"  name="swimming-pool" checked>
+                        </label>
+                      </div>
+                    </li>
                     <li class="catalog-filter-item">
-                      <label class="control">
-                        Парковка
-                        <input class="control-input" type="checkbox"  name="parking-lot" checked>
-                      </label>
-                      </li>
+                      <div class="input-checkbox">
+                        <label class="control control-checkbox">
+                          Парковка
+                          <input class="control-input" type="checkbox"  name="parking-lot" checked>
+                        </label>
+                      </div>
+                    </li>
                     <li class="catalog-filter-item">
-                      <label class="control">
-                        Wi-Fi
-                        <input class="control-input" type="checkbox" name="Wi-Fi">
-                      </label>
+                      <div class="input-checkbox">
+                        <label class="control control-checkbox">
+                          Wi-Fi
+                          <input class="control-input" type="checkbox" name="Wi-Fi">
+                        </label>
+                      </div>
                     </li>
                   </ul>
                 </fieldset>
@@ -115,19 +124,19 @@
                   </legend>
                   <ul class="catalog-filter-list">
                     <li class="catalog-filter-item">
-                      <label class="control">
+                      <label class="control control-radio">
                         Гостиница
                         <input class="control-input" type="radio" name="housing-type" value="hotel" checked>
                       </label>
                     </li>
                     <li class="catalog-filter-item">
-                      <label class="control">
+                      <label class="control control-radio">
                         Мотель
                         <input class="control-input" type="radio" name="housing-type" value="motel">
                       </label>
                     </li>
                     <li class="catalog-filter-item">
-                      <label class="control">
+                      <label class="control control-radio">
                         Апартаменты
                         <input class="control-input" type="radio" name="housing-type" value="apartments">
                       </label>
@@ -142,11 +151,11 @@
                     <label class="price-control-from" for="price-filter-from">
                       от
                     </label>
-                    <input class="control-input input-price-filter input-price-filter-from" type="number" name="min-price" id="price-filter-from" value="0">
+                    <input class="input-price-filter input-price-filter-from" type="number" name="min-price" id="price-filter-from" value="0">
                     <label class="price-control-to" for="price-filter-to">
                       до
                     </label>
-                    <input class="control-input input-price-filter input-price-filter-to" type="number" name="max-price" id="price-filter-to" value="9000"><br>
+                    <input class="input-price-filter input-price-filter-to" type="number" name="max-price" id="price-filter-to" value="9000"><br>
                   </div>
                   <input class="price-filter-range" type="range" min="0" max="9000">
                 </fieldset>
@@ -170,11 +179,13 @@
             <span class="catalog-results-title">
               Найдено гостиниц: 38
             </span>
-            <select class="select-control" aria-label="Сортировка">
-              <option value="сheap">
-                Сначала дешевые
-              </option>
-            </select>
+            <div class="catalog-select">
+              <select class="select-control" aria-label="Сортировка">
+                <option value="сheap">
+                  Сначала дешевые
+                </option>
+              </select>
+            </div>
             <ul class="showcase-modes">
               <li class="showcase-mode">
                 <a class="showcase-modes-link" href="#">
@@ -336,8 +347,8 @@
           </ul>
           <nav>
             <ol class="inner-pagination">
-              <li class="pagination-item">
-                <a class="pagination-link pagination-current-page" href="">
+              <li class="pagination-item pagination-current-page">
+                <a class="pagination-link pagination-link-current-page" href="">
                   1
                 </a>
               </li>
@@ -356,8 +367,8 @@
                   4
                 </a>
               </li>
-              <li class="pagination-item">
-                <a class="pagination-link pagination-dots" href="#">
+              <li class="pagination-item pagination-cut">
+                <a class="pagination-link pagination-link-dots" href="#">
                   ...
                 </a>
               </li>
