@@ -197,10 +197,12 @@
                     Дата заезда:
                     <input class="popup-input input-date" type="date" required>
                   </label>
+                  <span class="popup-date-error-message">Мы не можем отправить вас в прошлое.</span>
                   <label class="popup-input-name">
                     Дата выезда:
                     <input class="popup-input input-date" type="date" required>
                   </label>
+                  <span class="popup-availability-message">На эти даты есть свободные номера. Пока есть.</span>
                   <div class="popup-input-group-number">
                     <label class="popup-input-name popup-input-number">
                       Взрослые:
@@ -208,8 +210,16 @@
                     </label>
                     <label class="popup-input-name">
                       Дети:
-                      <div class="popup-info-button">
-                        <div class="popup-info-icon"></div>
+                      <div class="popup-info">
+                        <div class="popup-info-button">
+                          <div class="popup-info-icon"></div>
+                        </div>
+                        <div class="info-button-popup">
+                          <div class="info-button-popup-decoration"></div>
+                          <p class="info-button-popup-text">
+                            Укажите количество детей, <br>которые будут с вами, возраст <br>которых от 6 до 18 лет. Дети <br>до 6 лет размещаются<br> бесплатно.
+                          </p>
+                        </div>
                       </div>
                       <input class="popup-input input-number" type="number" min="0" required>
                     </label>

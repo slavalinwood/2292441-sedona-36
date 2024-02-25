@@ -153,17 +153,25 @@
                   <legend class="catalog-filter-title">
                     Стоимость, ₽:
                   </legend>
-                  <div class="price-filter-group">
-                    <label class="price-control-from" for="price-filter-from">
-                      от
-                    </label>
-                    <input class="input-price-filter input-price-filter-from" type="number" name="min-price" id="price-filter-from" value="0">
-                    <label class="price-control-to" for="price-filter-to">
-                      до
-                    </label>
-                    <input class="input-price-filter input-price-filter-to" type="number" name="max-price" id="price-filter-to" value="9000"><br>
+                  <div class="price-filters">
+                    <div class="price-filter-group">
+                      <label class="price-control-from" for="price-filter-from">
+                        от
+                      </label>
+                      <input class="input-price-filter input-price-filter-from" type="number" name="min-price" id="price-filter-from" min="0" max="10000" value="0">
+                      <label class="price-control-to" for="price-filter-to">
+                        до
+                      </label>
+                      <input class="input-price-filter input-price-filter-to" type="number" name="max-price" id="price-filter-to" min="0"  max="10000" value="9000"><br>
+                    </div>
+                    <div class="price-filter-range">
+                      <div class="range-progress"></div>
+                    </div>
+                    <div class="range-inputs">
+                      <input class="input-range input-range-min" type="range" min="0" max="10000" value="0">
+                      <input class="input-range input-range-max" type="range" min="0" max="10000" value="9000">
+                    </div>
                   </div>
-                  <input class="price-filter-range" type="range" min="0" max="9000">
                 </fieldset>
                   <div class="catalog-filter-button-group">
                     <button class="button catalog-filter-button" type="submit">

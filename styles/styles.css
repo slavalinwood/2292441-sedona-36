@@ -403,6 +403,10 @@ ul {
     background-color: #83B3D31F;
 }
 
+.services-item:last-child {
+    padding: 78px 85px;
+}
+
 .services-item-title {
     font-size: 24px;
     font-weight: 700;
@@ -749,6 +753,11 @@ ul {
     opacity: 1;
 }
 
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    appearance: none;
+}
+
 .price-filter-group {
     display: grid;
     grid-template-columns: 143px 143px;
@@ -778,15 +787,67 @@ ul {
 
 .price-filter-range {
     width: 287px;
+    height: 4px;
+    background-color: #5E676D;
+    position: relative;
+}
+
+.range-progress {
+    position: absolute;
+    height: 4px;
+    left: 25%;
+    right: 25%;
+    background-color: #ffffff;
+}
+
+.range-inputs {
+    position: relative;
+    width: 100%;
+}
+
+.input-range {
+    margin-left: 0;
+}
+
+.range-inputs input {
+    position: absolute;
+    top: -6px;
+    height: 4px;
+    width: 100%;
+    background: none;
+    appearance: none;
+    pointer-events: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+    appearance: none;
+    background-color: #ffffff;
+    pointer-events: auto;
+}
+
+input[type="range"]::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+    appearance: none;
+    background-color: #ffffff;
+    pointer-events: auto;
+    -moz-appearance: none;
+    border: none;
 }
 
 .input-price-filter {
     width: 143px;
-    padding: 9px 0 15px 15px;
+    padding: 12px 0 12px 15px;
     border: none;
     box-sizing: border-box;
     font-weight: 700;
     line-height: 24px;
+    font-size: 24;
+    -moz-appearance: textfield;
 }
 
 .input-price-filter-from {
@@ -1083,10 +1144,6 @@ ul {
     color: #000000;
 }
 
-.popup {
-    display: none;
-}
-
 .popup-background {
     position: fixed;
     width: 100%;
@@ -1099,14 +1156,17 @@ ul {
 
 .popup-content {
     position: fixed;
-    top: 14%;
-    left: 30.5%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 50%;
     background-color: #ffffff;
     box-sizing: border-box;
     padding: 64px 70px;
     width: 717px;
-    border-radius: 30px;
+    border-radius: 28px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    transform: translate(0, -50%);
 }
 
 .popup-title {
@@ -1144,6 +1204,7 @@ ul {
 
 .popup-input-group {
     width: 577px;
+    position: relative;
 }
 
 .popup-input-group-number {
@@ -1167,13 +1228,17 @@ ul {
     width: 242px;
 }
 
+.popup-info {
+    margin-left: 10px;
+    margin-right: auto;
+    position: relative;
+}
+
 .popup-info-button {
     width: 26px;
     height: 26px;
     background-color: #83B3D3;
     border-radius: 20px;
-    margin-right: auto;
-    margin-left: 10px;
 }
 
 .popup-info-icon {
@@ -1184,6 +1249,33 @@ ul {
     background-image: url(../images/i-icon.svg);
     position: relative;
     left: 12px;
+}
+
+.info-button-popup {
+    position: absolute;
+    top: 30px;
+    left: -116px;
+}
+
+.info-button-popup-decoration {
+    width: 19px;
+    height: 9px;
+    background-image: url(../images/info-button-arrow.svg);
+    position: relative;
+    left: 118.5px;
+}
+
+.info-button-popup-text {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #ffffff;
+    text-align: left;
+    height: auto;
+    background-color: #333333;
+    margin: 0;
+    padding: 21.5px 22.7px;
+    border-radius: 10px;
 }
 
 .popup-input-number {
@@ -1204,10 +1296,25 @@ ul {
 
 .input-number {
     width: 110px;
+    -moz-appearance: textfield;
 }
 
 .input-date {
     width: 440px;
+}
+
+.popup-date-error-message, .popup-availability-message {
+    color: #FF5757;
+    font-size: 16px;
+    line-height: 21px;
+    position: absolute;
+    top: 52px;
+    left: 157px;
+}
+
+.popup-availability-message {
+    color: #333333;
+    top: 148px;
 }
 
 .popup-submit-button {
