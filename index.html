@@ -196,17 +196,25 @@
                   <label class="popup-input-name">
                     Дата заезда:
                     <input class="popup-input input-date" type="date" required>
+                    <div class="calendar-image"></div>
                   </label>
                   <span class="popup-date-error-message">Мы не можем отправить вас в прошлое.</span>
                   <label class="popup-input-name">
                     Дата выезда:
                     <input class="popup-input input-date" type="date" required>
+                    <div class="calendar-image"></div>
                   </label>
                   <span class="popup-availability-message">На эти даты есть свободные номера. Пока есть.</span>
                   <div class="popup-input-group-number">
                     <label class="popup-input-name popup-input-number">
                       Взрослые:
                       <input class="popup-input input-number" type="number" min="1" required>
+                      <div class="minus-adults-button">
+                        <div class="minus"></div>
+                      </div>
+                      <div class="plus-adults-button">
+                        <div class="plus"></div>
+                      </div>
                     </label>
                     <label class="popup-input-name">
                       Дети:
@@ -222,6 +230,12 @@
                         </div>
                       </div>
                       <input class="popup-input input-number" type="number" min="0" required>
+                      <div class="minus-kids-button">
+                        <div class="minus"></div>
+                      </div>
+                      <div class="plus-kids-button">
+                        <div class="plus"></div>
+                      </div>
                     </label>
                   </div>
                   <button class="button popup-submit-button" type="submit">Найти</button>

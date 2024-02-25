@@ -1144,6 +1144,10 @@ input[type="range"]::-moz-range-thumb {
     color: #000000;
 }
 
+.popup {
+    display: none;
+}
+
 .popup-background {
     position: fixed;
     width: 100%;
@@ -1296,11 +1300,78 @@ input[type="range"]::-moz-range-thumb {
 
 .input-number {
     width: 110px;
+    padding: 12px 40px 12px 40px;
+    text-align: center;
     -moz-appearance: textfield;
+}
+
+.minus-adults-button, .minus-kids-button,
+.plus-adults-button, .plus-kids-button {
+    position: absolute;
+    width: 40px;
+    height: 48px;
+}
+
+.minus-adults-button {
+    left: 137px;
+    padding-top: 23px;
+
+}
+
+.minus-kids-button {
+    left: 132px;
+    padding-top: 23px;
+
+}
+
+.plus-adults-button {
+    left: 207px;
+    padding-top: 17px;
+}
+
+.plus-kids-button {
+    left: 202px;
+    padding-top: 17px;
+}
+
+.minus {
+    background-image: url(../images/minus.svg);
+    width: 14px;
+    height: 2px;
+    display: block;
+    margin: 0 auto;
+    opacity: 0.3;
+}
+
+.plus {
+    background-image: url(../images/plus.svg);
+    width: 14px;
+    height: 14px;
+    display: block;
+    margin: 0 auto;
+    opacity: 0.3;
 }
 
 .input-date {
     width: 440px;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
+}
+
+input[type="date"]::-moz-calendar-picker-indicator {
+    display: none;
+}
+
+.calendar-image {
+    position: absolute;
+    top: 16px;
+    left: 541px;
+    width: 16px;
+    height: 15px;
+    background-image: url(../images/calendar.svg);
+    opacity: 0.3;
 }
 
 .popup-date-error-message, .popup-availability-message {
