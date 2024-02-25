@@ -671,6 +671,14 @@ ul {
     margin-bottom: 0;
 }
 
+.input-checkbox {
+    position: relative;
+}
+
+.control-checkbox {
+    padding-left: 36px;
+}
+
 .control-checkbox::before {
     content:"";
     display: block;
@@ -679,6 +687,38 @@ ul {
     border-radius: 4px;
     background-color: #ffffff;
     position: absolute;
+    top: 1.5px;
+    z-index: 1;
+}
+
+.control-checkbox::after {
+    content: "";
+    display: block;
+    width: 13px;
+    height: 11px;
+    position: absolute;
+    background-image: url(../images/checked.svg);
+    top: 7px;
+    left: 4px;
+    z-index: 2;
+    opacity: 0;
+}
+
+.control-input {
+    appearance: none;
+    position: absolute;
+}
+
+.control-input:checked + .control-checkbox::after {
+    opacity: 1;
+}
+
+.input-radio {
+    position: relative;
+}
+
+.control-radio {
+    padding-left: 36px;
 }
 
 .control-radio::before {
@@ -689,11 +729,24 @@ ul {
     border-radius: 10px;
     background-color: #ffffff;
     position: absolute;
+    top: 1.5px;
 }
 
-.control-input {
-    appearance: none;
+.control-radio::after {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: #3F5E72;
     position: absolute;
+    top: 7px;
+    left: 5px;
+    opacity: 0;
+}
+
+.control-input-radio:checked + .control-radio::after {
+    opacity: 1;
 }
 
 .price-filter-group {

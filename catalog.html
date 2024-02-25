@@ -94,25 +94,25 @@
                   <ul class="catalog-filter-list">
                     <li class="catalog-filter-item">
                       <div class="input-checkbox">
-                        <label class="control control-checkbox">
+                        <input class="control-input" type="checkbox"  name="swimming-pool" id="checkbox-swimming-pool" checked>
+                        <label class="control control-checkbox" for="checkbox-swimming-pool">
                           Бассейн
-                          <input class="control-input" type="checkbox"  name="swimming-pool" checked>
                         </label>
                       </div>
                     </li>
                     <li class="catalog-filter-item">
                       <div class="input-checkbox">
-                        <label class="control control-checkbox">
+                        <input class="control-input" type="checkbox"  name="parking-lot" id="checkbox-parking-lot" checked>
+                        <label class="control control-checkbox" for="checkbox-parking-lot">
                           Парковка
-                          <input class="control-input" type="checkbox"  name="parking-lot" checked>
                         </label>
                       </div>
                     </li>
                     <li class="catalog-filter-item">
                       <div class="input-checkbox">
-                        <label class="control control-checkbox">
+                        <input class="control-input" type="checkbox" name="Wi-Fi" id="checkbox-Wi-Fi">
+                        <label class="control control-checkbox" for="checkbox-Wi-Fi">
                           Wi-Fi
-                          <input class="control-input" type="checkbox" name="Wi-Fi">
                         </label>
                       </div>
                     </li>
@@ -124,23 +124,29 @@
                   </legend>
                   <ul class="catalog-filter-list">
                     <li class="catalog-filter-item">
-                      <label class="control control-radio">
-                        Гостиница
-                        <input class="control-input" type="radio" name="housing-type" value="hotel" checked>
-                      </label>
+                      <div class="input-radio">
+                        <input class="control-input control-input-radio" type="radio" name="housing-type" value="hotel" id="radio-hotel" checked>
+                        <label class="control control-radio" for="radio-hotel">
+                          Гостиница
+                        </label>
+                      </div>
                     </li>
                     <li class="catalog-filter-item">
-                      <label class="control control-radio">
-                        Мотель
-                        <input class="control-input" type="radio" name="housing-type" value="motel">
-                      </label>
+                      <div class="input-radio">
+                        <input class="control-input control-input-radio" type="radio" name="housing-type" value="motel" id="radio-motel">
+                        <label class="control control-radio" for="radio-motel">
+                          Мотель
+                        </label>
+                      </div>
                     </li>
                     <li class="catalog-filter-item">
-                      <label class="control control-radio">
-                        Апартаменты
-                        <input class="control-input" type="radio" name="housing-type" value="apartments">
-                      </label>
-                      </li>
+                      <div class="input-radio">
+                        <input class="control-input control-input-radio" type="radio" name="housing-type" value="apartments" id="radio-apartments">
+                        <label class="control control-radio" for="radio-apartments">
+                          Апартаменты
+                        </label>
+                      </div>
+                    </li>
                   </ul>
                 </fieldset>
                 <fieldset class="catalog-filter-group-price">
